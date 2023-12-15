@@ -9,16 +9,15 @@ import org.springframework.stereotype.Service;
 
 import java.util.List;
 import java.util.Optional;
-
 @Service
 public class ClinicalInfoServiceImpl implements ClinicalInfoService {
-
-    private final ClinicalInfoRepository clinicalInfoRepository;
-
     @Autowired
+    private ClinicalInfoRepository clinicalInfoRepository;
+
+   /* @Autowired
     public ClinicalInfoServiceImpl(ClinicalInfoRepository clinicalInfoRepository) {
         this.clinicalInfoRepository = clinicalInfoRepository;
-    }
+    }*/
 
     @Override
     public ClinicalInfo createClinicalInfo(ClinicalInfo clinicalInfo) {

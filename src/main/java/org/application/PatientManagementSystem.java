@@ -1,16 +1,16 @@
-package org.application.app;
-
+package org.application;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.context.annotation.ComponentScan;
+import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 
 @SpringBootApplication
-@ComponentScan(basePackages = "org.application.repository")
+@EnableJpaRepositories
 public class PatientManagementSystem {
 
     public static void main(String[] args) {
-        SpringApplication.run(org.application.app.PatientManagementSystem.class, args);
+        SpringApplication.run(org.application.PatientManagementSystem.class, args);
     }
 }
+
 
